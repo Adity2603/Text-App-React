@@ -15,14 +15,17 @@ export default function TextForm(props) {
 
     const handleOnChange = (event)=>{
         // console.log("On change");
+        document.querySelector(".ChangeName").innerText = "Click To Copy "
         setText(event.target.value) 
     }
 
-     const copyTextFromTextareaToClipboard =  (text)=> {
+     const copyTextFromTextareaToClipboard =  ()=> {
         
       
         navigator.clipboard.writeText(text)
           .then(() => {
+            document.querySelector(".ChangeName").innerText = "Copied"
+            // alert("Text Copied Successfully")
             console.log('Text copied to clipboard successfully');
           })
           .catch((err) => {
@@ -45,7 +48,7 @@ export default function TextForm(props) {
             </div>
             <button className="btn btn-danger mx-2 " onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-danger mx-2" onClick={handleLoClick}>Convert to Uppercase</button>
-            <button className="btn btn-danger mx-2" onClick={copyTextFromTextareaToClipboard}>Copy to clipboard</button>
+            <button className="btn btn-danger mx-2 ChangeName " onClick={copyTextFromTextareaToClipboard}>Copy to clipboard</button>
 
             <div className="container my-3 ">
                 <h3>Character = {text.length}</h3>
