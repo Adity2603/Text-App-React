@@ -18,6 +18,22 @@ export default function TextForm(props) {
         setText(event.target.value) 
     }
 
+     const copyTextFromTextareaToClipboard =  (text)=> {
+        
+      
+        navigator.clipboard.writeText(text)
+          .then(() => {
+            console.log('Text copied to clipboard successfully');
+          })
+          .catch((err) => {
+            console.error('Unable to copy text to clipboard:', err);
+          });
+      }
+      
+      // Example usage:
+      
+      
+
     const [text, setText] = useState('Enter text here2'); 
     // text = "new text"; // Wrong way to change the state
     // setText("new text"); // Correct way to change the state
@@ -29,6 +45,7 @@ export default function TextForm(props) {
             </div>
             <button className="btn btn-danger mx-2 " onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-danger mx-2" onClick={handleLoClick}>Convert to Uppercase</button>
+            <button className="btn btn-danger mx-2" onClick={copyTextFromTextareaToClipboard}>Copy to clipboard</button>
 
             <div className="container my-3 ">
                 <h3>Character = {text.length}</h3>
