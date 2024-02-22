@@ -46,14 +46,15 @@ function App() {
     </div>
     <div className="container my-3">
       <Switch>
+      <Route exact path='/about' >
+        <About/>
+
+        </Route>
         <Route exact path='/' >
         <TextForm showalert= {showalert} heading="Enter the text to analyze below"/>
 
         </Route>
-        <Route exact path='/about' >
-        <About/>
-
-        </Route>
+        
       </Switch>
 
       
