@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Visit Site :- ([Click Here](https://adity2603.github.io/Text-App-React/))
+Visit Site :- ([Click Here](https://adity2603.github.io/Tut-App-React/))
 
 ## Available Scripts
 
