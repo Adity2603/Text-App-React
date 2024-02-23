@@ -52,7 +52,7 @@ export default function TextForm(props) {
             <button className="btn btn-danger mx-2 " onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-danger mx-2" onClick={handleLoClick}>Convert to Lower Case</button>
             <button className="btn btn-success mx-2 ChangeName " onClick={copyTextFromTextareaToClipboard}>Copy to clipboard</button>
-            <button className="btn btn-primary mx-2 ChangeName " onClick={TextClear}>Clear</button>
+            <button className="btn btn-danger mx-2 ChangeName " onClick={TextClear}>Clear</button>
 
             <div className="container my-3 ">
                 <h3>Character = {text.length}</h3>
