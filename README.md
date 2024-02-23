@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+THIS IS THE TEXT UTILITY APPLICATION WHERE YOU CAN MANIPULATE THE TEXT 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Visit Site :- ([Click Here](https://adity2603.github.io/Tut-App-React/))
